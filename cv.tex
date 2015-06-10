@@ -1,0 +1,155 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvicons{awesome}
+
+
+% casual (default),
+% classic,
+% oldstyle, and
+% banking,
+% and 7 color schemes:
+
+% black,
+% blue,
+% green,
+% grey,
+% orange,
+% purple, and
+% red.
+\moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{red}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Viktor}{Holmberg}
+% \title{Resumé title}                               % optional, remove / comment the line if not wanted
+% \address{street and number}{postcode city}{country}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{074~666~80~959}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+% \phone[fixed]{+2~(345)~678~901}
+% \phone[fax]{+3~(456)~789~012}
+\email{viktor.holmberg@gmail.com}                               % optional, remove / comment the line if not wanted
+% \homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+\social[linkedin][www.linkedin.com/pub/viktor-holmberg/49/790/4bb]{viktor holmberg}                     % optional, remove / comment the line if not wanted
+% \social[twitter]{rutchkiwi}                             % optional, remove / comment the line if not wanted
+\social[github]{rutchkiwi}                              % optional, remove / comment the line if not wanted
+% \extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+% \photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+% \quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Profile}
+Full stack developer with a backend focus. I like to get involved in all parts of development to understand the big picture, from the frontend to the database.
+
+As a programmer I produce simple and clear code, and when needed I’m not afraid to refactor my way there. I believe in choosing the right tool for the job, and love to learn new tools and technologies.
+
+My ideal work environment is open, collaborative and challenging.
+
+\section{Education}
+\cventry{5 yr}{Masters degree in Computer Science}{KTH Royal Institute of Technology}{Stockholm}{}{Masters track focus on machine learning and information retrieval}  % arguments 3 to 6 can be left empty
+\cventry{6 mo}{Exchange studies}{University of Texas at Austin}{}{}{}
+
+\section{Experience}
+\cventry{3 mo}{Full stack developer}{Depop}{London}{}{
+\begin{itemize}
+    \item Back-end development on actor based system
+     \begin{itemize} \item \textit{Scala, Mysql}
+    \end{itemize}
+    \item Front-end development on backoffice tool for support team
+     \begin{itemize} \item \textit{Angular, Bootstrap}
+    \end{itemize}
+  \end{itemize}
+}
+\cventry{18 mo}{Full stack developer}{Videoplaza}{Stockholm}{}{
+\begin{itemize}
+    \item Full-stack development on simulation-based ad inventory forecasting system;
+    \begin{itemize}
+      \item Enabled my team to do fully autonomous releases by separating our backend codebase into
+  its own repository.
+      \item Increased platform stability and team autonomy by separating the forecasting API into its
+  own microservice.
+      \item \textit{Java, Javascript, Cassandra, Redis, RabbitMQ}
+      \end{itemize}
+\item Backend development on ad server:
+  \begin{itemize}%
+  \item Designed and implementing customer-friendly REST apis w. dynamic documentation using swagger.
+  \item \textit{Java, Scala, MySQL}
+  \end{itemize}
+\item Devops / CI work:
+    \begin{itemize}
+    \item Developed a solution for releasing the main legacy monolith without downtime.
+    \item Moved forecasting system deployment from fabric scripts to ansible, enabling one-click, zero-downtime release for all forecasting microservices in both production and test environments.
+    \item Reduced ad server build time from >1 hr to <20 mins in one days work.
+    \item \textit{Haproxy, Ansible, Maven, Gradle, Jenkins}
+    \end{itemize}
+\end{itemize}
+}
+
+\cventry{6 mo}{Master thesis}{Findwise}{Stockholm}{}{Master thesis work developing an automated expert recommendation system, capable of inferring expertise of employees from data in a corporate internal network. 
+\href{http://urn.kb.se/resolve?urn=urn:nbn:se:kth:diva-142450}{Read it \textbf{here}}
+\begin{itemize}
+  \item \textit{java, python, mongoDB, Solr}
+\end{itemize}
+}
+
+
+\cventry{1 yr (part time)}{Test automation developer}{Spotify}{Stockholm}{}{Development of graph-based test automation tools and automated tests for backend payment systems.
+\begin{itemize}
+  \item \textit{python, java}
+\end{itemize}
+}
+
+
+
+\section{Languages}
+\cvitem{Java}{Main language for my work at Videoplaza. Includes frameworks and tools like maven, gradle, jax-rs, dropwizard, hibernate etc.}
+\cvitem{Javascript}{Front-end development for Videoplaza and Depop. Includes tools and frameworks like angular, node, grunt, bower etc.}
+\cvitem{Python} {Main language for my work at Spotify}
+\cvitem{Scala} {Main language at Depop, various small projects at Videoplaza}
+\cvitem{Go, Elixir} {Favourite hobby languages at the moment}
+\cvitem{Objective-C}{Developed the iPhone app Handla!, a shopping list for persons with cognitive disorders as a school project.}
+\cvitem{NoSQL}{Used \textbf{Cassandra} as the main data store for the Videoplaza ad forecasting. The same system used \textbf{Redis} to store short-lived API objects. At Findwise I made plugins for a document processing system based on \textbf{MongoDB.}}
+\cvitem{RDBMS}{\textbf{MySQL} at Videoplaza and Spotify. Various others like PostgreSQL or SQLite in school and in personal projects.}
+
+\clearpage
+%-----       letter       ---------------------------------------------------------
+% \recipient{Gocardless recruitment team}{}% \date{January 01, 1984}
+% \opening{Hi!}
+% \closing{}
+% \makelettertitle
+
+% I found out about you guys talking to Grey at Silicon milk roundabout. What got my attention straight away was that you guys are daringly using Elixir in production (favourite language at the moment). After working on a highly concurrent payment system in Scala I am eager to try something a bit more sane! :)
+
+% I also gathered that you think code quality is important, which I like as someone who deeply values creating stuff that I can be proud of.
+
+% It's probably worth mentioning that I don't have any ruby experience, so you'd have to be prepared that it'll be a few weeks before I'm fully up to speed. I love to learn new stuff and for me this is a great opportunity to learn how to code large systems in a dynamicly typed language.
+
+% Looking forward to hearing from you!
+% \makeletterclosing
+
+% \clearpage
+\end{document}
