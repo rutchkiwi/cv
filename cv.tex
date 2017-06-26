@@ -63,9 +63,11 @@
 \makecvtitle
 
 \section{Profile}
-Full stack developer with a backend focus. I like to get involved in all parts of development to understand the big picture, from the frontend to the database.
+Full stack developer with a backend focus. I like to get involved in all parts of development to understand the big picture. That includes everything from the database, to the frontend, to the people and processes outside the computer.
 
-As a programmer I produce simple and clear code, and when needed I’m not afraid to refactor my way there. I believe in choosing the right tool for the job, and love to learn new tools and technologies.
+Coding-wise I value simplicity above all else, and when needed I’m not afraid to refactor my way there. 
+
+I love to learn new tools and technologies, and believe in choosing the right tool for the job, keeping in mind that that right tool might not be the newest and shiniest thing.
 
 My ideal work environment is open, collaborative and challenging.
 
@@ -74,27 +76,36 @@ My ideal work environment is open, collaborative and challenging.
 \cventry{6 mo}{Exchange studies}{University of Texas at Austin}{}{}{}
 
 \section{Experience}
-\cventry{6 mo}{Back-end developer}{uSwitch}{London}{}{
+\cventry{8 mo}{Tech lead, energy finance team}{uSwitch}{London}{}{
+uSwitchs commercial setup is complex, with each energy supplier having their own commercial model. As such, uSwitch is highly dependent on computer systems to estimate, invoice, and track revenue.
 \begin{itemize}
-    \item Development on backoffice backend systems
-     \begin{itemize} \item \textit{Clojure, Mysql}
-    \end{itemize}
-    \item Front-end development on backoffice apps
-     \begin{itemize} \item \textit{Clojure, Ruby, Javascript}
-    \end{itemize}
-    \item Ops work keeping microservices working with up to date tooling
-     \begin{itemize} \item \textit{AWS, Docker, ELK}
-    \end{itemize}
+    \item Ongoing work to ensure that we estimate revenue accurately, and get paid the right amount by our partners.
+    \item Liaison between the accounting, invoicing, commercial and tech teams, making sure they all have access to the right information.
+    \item Lead a rewrite of our system for attributing revenue. The old system had serious accuracy problems when working on incomplete data, which had made the users stop trusting it. 
+    By using and showing exact error bounds, and doing comprehensive self-checking of the numbers, the new system was completely accurate. Using the new accurate data, we managed to identify several large payment problems, such as overpayments and underpayments from suppliers.
+    We also made the new system stream based instead of batch based, which made the developer experience much more responsive.
+    \item Lead the development of an automatic system for raising invoices. This system removed a large amount of manual labor for the team and ensured traceability of our invoicing process.
   \end{itemize}
 }
-\cventry{5 mo}{Full stack developer}{Depop}{London}{}{
+% Uswitch is a price comparison website for utilites like gas and electricity.
+% Uswitch's commerical setup is complex, with each energy supplier having their own commercial model. As such, uSwitch is highly dependant on computer systems to estimate, invoice, and track revenue.
+% Liason between the accounting, invoicing, commercial and tech teams, making sure they all have access to the right information. 
+% Ongoing work to ensure that we estimate revenue accuratly, and get paid the right amount by our partners.
+% Lead a rewrite of our system for attributing revenue. The old system had serious accuracy problems when working on incomplete data, which had made its users lose trust in it. The old system "guessed" when some data was missing, which also made it extremely hard to debug problems, as it was always a bit off, even when it was working as expected. The fact that it was a one hour plus batch process did not help either.
+% By using and showing exact error bounds, and doing comperhensive self-checking of the numbers, the new system was as good as completely accurate in it's calculations. Using the new accurate data, we managed to identify several large payment problems, such as overpayments and underpayments from suppliers.
+% We also made the new system stream based instead of batch based, which made the developer experience much more responsive.
+% Lead the development of an automatic system for raising invoices, removing a large amount of manual labour for the team and ensuring tracaility of our invoicing process.
+\cventry{14 mo}{Back-end developer, energy back office team}{uSwitch}{London}{}{
 \begin{itemize}
-    \item Back-end development on highly concurrent payment system
-     \begin{itemize} \item \textit{Scala, Mysql}
-    \end{itemize}
-    \item Front-end development on backoffice tool for support team
-     \begin{itemize} \item \textit{Angular, Bootstrap}
-    \end{itemize}
+    \item Development on various backoffice systems with associated UI's.
+    \item Ops work keeping microservices running smoothly with up to date tooling.
+  \end{itemize}
+}
+\clearpage
+\cventry{4 mo}{Full stack developer}{Depop}{London}{}{
+\begin{itemize}
+    \item Back-end development on highly concurrent payment system.
+    \item Front-end development on backoffice tool for the support team.
   \end{itemize}
 }
 \cventry{18 mo}{Full stack developer}{Videoplaza}{Stockholm}{}{
@@ -105,55 +116,44 @@ My ideal work environment is open, collaborative and challenging.
   its own repository.
       \item Increased platform stability and team autonomy by separating the forecasting API into its
   own microservice.
-      \item \textit{Java, Javascript, Cassandra, Redis, RabbitMQ}
       \end{itemize}
-\end{itemize}
-}
-% todo: remove this page splitting when not needed anymore
-\cventry{18 mo}{Full stack developer}{Videoplaza}{Stockholm}{}{
-\begin{itemize}
-\item Backend development on ad server:
-  \begin{itemize}%
-  \item Designed and implementing customer-friendly REST apis w. dynamic documentation using swagger.
-  \item \textit{Java, Scala, MySQL}
-  \end{itemize}
-\item Ops / CI work:
-    \begin{itemize}
-    \item Developed a solution for releasing the main legacy monolith without downtime.
-    \item Moved forecasting system deployment from fabric scripts to ansible, enabling one-click, zero-downtime release for all forecasting microservices in both production and test environments.
-    \item Reduced ad server build time from >1 hr to <20 mins in one days work.
-    \item \textit{Haproxy, Ansible, Maven, Gradle, Jenkins}
+    \item Backend development on ad server:
+      \begin{itemize}%
+      \item Designed and implementing customer-friendly REST apis w. dynamic documentation using swagger.
+      \end{itemize}
+    \item Ops / CI work:
+        \begin{itemize}
+        \item Developed a solution for releasing the main legacy monolith without downtime.
+        \item Moved forecasting system deployment from fabric scripts to ansible, enabling one-click, zero-downtime release for all forecasting microservices in both production and test environments.
+        \item Reduced ad server build time from >1 hr to <20 mins in one days work.
+        \end{itemize}
     \end{itemize}
-\end{itemize}
-}
+    }
 
 \cventry{6 mo}{Master thesis}{Findwise}{Stockholm}{}{Master thesis work developing an automated expert recommendation system, capable of inferring expertise of employees from data in a corporate internal network. 
 \href{http://urn.kb.se/resolve?urn=urn:nbn:se:kth:diva-142450}{Read it \textbf{here}}
-\begin{itemize}
-  \item \textit{java, python, mongoDB, Solr}
-\end{itemize}
 }
-
 
 \cventry{1 yr (part time)}{Test automation developer}{Spotify}{Stockholm}{}{Development of graph-based test automation tools and automated tests for backend payment systems.
-\begin{itemize}
-  \item \textit{python, java}
-\end{itemize}
 }
 
 
-
-\section{Languages}
-\cvitem{Java}{Main language for my work at Videoplaza. Includes frameworks and tools like maven, gradle, jax-rs, dropwizard, hibernate etc.}
-\cvitem{Python} {Main language for my work at Spotify}
+\section{Technologies}
 \cvitem{Clojure} {Main language at uSwitch}
-\cvitem{Go, Elixir} {Favourite hobby languages at the moment}
+\cvitem{Java}{Main language for my work at Videoplaza.}
+\cvitem{Python} {Main language for my work at Spotify}
+\cvitem{Go} {Hobby projects}
 \cvitem{Javascript}{Front-end development for Videoplaza and Depop. Includes tools and frameworks like angular, node, grunt, bower etc.}
-\cvitem{Scala} {Main language at Depop, various small projects at Videoplaza}
-\cvitem{Objective-C}{Developed the iPhone app Handla!, a shopping list for persons with cognitive disorders as a school project.}
-\cvitem{NoSQL}{Used \textbf{Cassandra} as the main data store for the Videoplaza ad forecasting. The same system used \textbf{Redis} to store short-lived API objects. At Findwise I made plugins for a document processing system based on \textbf{MongoDB.}}
-\cvitem{RDBMS}{\textbf{MySQL} at Videoplaza and Spotify. Various others like PostgreSQL or SQLite in school and in personal projects.}
+\cvitem{Scala} {Main language at Depop, various small projects at Videoplaza. (Please don't make me work with Scala again!)}
+\cvitem{Data technologies} {MySQL, PostgresSQL, RabbitMQ, Redis, Cassandra, Kafka.}
+\cvitem{Operations/Infrastructure} {Drone CI, Jenkins, Docker, Terraform, Ansible, AWS (EC2, RDS, S3, ECS, cloudwatch, DynamoDB)}
 
+
+
+\section{Fun facts}
+\cvitem{Other job experience} {I've worked as a gardener, bus cleaner, security guard, and was in the swedish army for a year.}
+\cvitem{Biggest fear} {Crane flies}
+\cvitem{Favorite soda} {Fanta}
 \clearpage
 %-----       letter       ---------------------------------------------------------
 % \recipient{Gocardless recruitment team}{}% \date{January 01, 1984}
